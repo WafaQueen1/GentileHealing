@@ -734,6 +734,25 @@ body.mood-Proud {
   font-family: var(--font-heading);
 }
 
+/* Specialized Results Styles */
+.whisper-header {
+    font-size: 0.9rem;
+    color: var(--cyber-gold);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.personality-summary {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--pearl-white);
+    opacity: 0.8;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .hero h1 {

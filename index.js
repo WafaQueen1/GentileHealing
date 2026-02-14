@@ -144,6 +144,11 @@ const affirmations = {
         "The stars are watching over your dreams. Rest in peace.",
         "Release the day's weight. You handled it with such courage.",
         "Softness is your power. Let the night carry your thoughts away."
+    ],
+    "Night": [
+        "The stars are watching over your dreams. Rest in peace.",
+        "Release the day's weight. You handled it with such courage.",
+        "Softness is your power. Let the night carry your thoughts away."
     ]
 };
 
@@ -519,10 +524,20 @@ function showResults(isDirect = false) {
 
     // Personality Info
     if (personalityTypeDisplay) personalityTypeDisplay.innerText = userType;
-    if (personalityDescDisplay) personalityDescDisplay.innerHTML = personalityDescriptions[userType] || "A unique and beautiful soul.";
+    
+    // Personalized Whisper Header
+    let time = isDirect ? selectedTime : getTimeOfDay();
+    const genderTerm = selectedGender === "Male" ? "Son of the Midnight Stars" : "Daughter of the Lunar Light";
+    const timeWhisper = time === "Morning" ? "rising with the dawn" : "thriving in the velvet night";
+    
+    if (personalityDescDisplay) {
+        personalityDescDisplay.innerHTML = `
+            <div class="whisper-header">A Whisper for Your Soul: ${genderTerm}, ${timeWhisper}.</div>
+            <div class="personality-summary">${personalityDescriptions[userType] || "A unique and beautiful soul."}</div>
+        `;
+    }
     
     // Personalized Greeting
-    const time = isDirect ? selectedTime : getTimeOfDay();
     const greetingPrefix = selectedGender === "Male" ? "Dear Traveler," : "Dear Soul,";
     const timeGreeting = time === "Morning" ? "May your day be filled with clarity." : "May your night be filled with peace.";
     
@@ -541,15 +556,23 @@ function showResults(isDirect = false) {
 
     // Healing & Joy View (Tailored)
     const tailored = tailoredContent[userType] || { healing: "Release the noise.", joy: "Find your center.", ritual: "Breathe deep.", insecurities: "Observe without judgment." };
-    if (healingMessageDisplay) healingMessageDisplay.innerHTML = `<strong>Midnight Healing:</strong> ${tailored.healing}<br><br><strong>Midnight Ritual:</strong> ${tailored.ritual}`;
+    
+    // Specialized Advice based on Gender and Time
+    const genderSuffix = selectedGender === "Male" ? " Embrace your protective strength." : " Nurture your intuitive grace.";
+    const timeAdvice = time === "Morning" ? " Carry this light through the day." : " Let this peace guide your dreams.";
 
-    // Joy & Growth View (Enhanced)
-    if (joyMessageDisplay) joyMessageDisplay.innerText = tailored.joy;
-    if (insecurityMessageDisplay) insecurityMessageDisplay.innerText = tailored.insecurities;
+    if (healingMessageDisplay) healingMessageDisplay.innerHTML = `<strong>Midnight Healing:</strong> ${tailored.healing}${timeAdvice}<br><br><strong>Midnight Ritual:</strong> ${tailored.ritual}`;
+
+    // Joy & Growth View (Enhanced & Specialized)
+    if (joyMessageDisplay) joyMessageDisplay.innerText = tailored.joy + genderSuffix;
+    if (insecurityMessageDisplay) insecurityMessageDisplay.innerText = tailored.insecurities + " Focus on finding your true center today.";
     
     const primaryTrait = userType[0];
     const insightEl = document.getElementById('growth-insight');
-    if (insightEl) insightEl.innerText = growthInsights[primaryTrait];
+    if (insightEl) {
+        let baseInsight = growthInsights[primaryTrait] || "Growth comes from within.";
+        insightEl.innerText = baseInsight + (selectedGender === "Male" ? " A man's growth is found in his quiet resolve." : " A woman's growth is found in her radiant wisdom.");
+    }
 
     // Soul Signature Rendering
     renderSoulSignature(userType);
