@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethereal Soul | Midnight Sanctuary</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Midnight Sanctuary Visual Layers -->
+    <div class="nebula-bg"></div>
+    <div class="particles-container" id="particles"></div>
+    <div class="ethereal-overlay" id="mouse-parallax"></div>
+
+    <div class="container">
+      <!-- Intro Landing -->
+      <section id="intro-section" class="hero">
+        <div class="aura-sphere-container">
+          <div class="aura-sphere"></div>
+          <div class="aura-ring r1"></div>
+          <div class="aura-ring r2"></div>
+          <div class="aura-ring r3"></div>
+        </div>
+        <h1>Ethereal Soul</h1>
+        <p>
+          A journey of self-discovery, healing, and joy. Transcend the ordinary
+          to find your inner essence.
+        </p>
+        <button id="start-btn" class="btn-primary">Begin the Awakening</button>
+      </section>
+
+      <!-- Questionnaire Section -->
+      <section id="quiz-section" style="display: none">
+        <div class="glass-card quiz-box">
+          <div class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+          </div>
+          <div id="question-content">
+            <!-- Question will be injected here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Sanctuary Section (Results) -->
+      <section id="results-section" style="display: none">
+        <div class="sanctuary-nav">
+          <button class="nav-tab active" data-view="essence-view">
+            Essence
+          </button>
+          <button class="nav-tab" data-view="analysis-view">Analysis</button>
+          <button class="nav-tab" data-view="healing-view">Healing</button>
+          <button class="nav-tab" data-view="joy-view">Joy</button>
+        </div>
+
+        <div class="glass-card">
+          <!-- Essence View -->
+          <div id="essence-view" class="sanctuary-view active">
+            <h2>Your Inner Essence is...</h2>
+            <div id="personality-type" class="personality-badge"></div>
+            <p id="personality-description"></p>
+
+            <div class="mood-section" style="margin-top: 2.5rem">
+              <h3>How is your soul feeling in this midnight sanctuary?</h3>
+              <div class="mood-picker">
+                <button class="mood-btn" onclick="selectMood('Radiant')">✨ Radiant</button>
+                <button class="mood-btn" onclick="selectMood('Tired')">🌙 Tired</button>
+                <button class="mood-btn" onclick="selectMood('Anxious')">🌊 Anxious</button>
+                <button class="mood-btn" onclick="selectMood('Overwhelmed')">⛈️ Overwhelmed</button>
+                <button class="mood-btn" onclick="selectMood('Proud')">🦁 Proud</button>
+                <button class="mood-btn" onclick="selectMood('Seeking')">🌿 Seeking</button>
+                <button class="mood-btn" onclick="selectMood('Lonely')">🌌 Lonely</button>
+                <button class="mood-btn" onclick="selectMood('Inspired')">🎨 Inspired</button>
+                <button class="mood-btn" onclick="selectMood('Healing')">🩹 Healing</button>
+                <button class="mood-btn" onclick="selectMood('Dreaming')">☁️ Dreaming</button>
+              </div>
+              <div id="mood-response" class="affirmation-box" style="display: none">
+                <p id="mood-words" style="font-size: 1.2rem; line-height: 1.6"></p>
+                <p id="psychological-insight" style="font-size: 0.95rem; margin-top: 1rem; color: var(--electric-blush); font-style: italic"></p>
+              </div>
+            </div>
+
+            <div class="affirmation-box">
+              <h3>A Whisper for Your Soul</h3>
+              <p id="daily-affirmation"></p>
+            </div>
+          </div>
+
+          <!-- Analysis View -->
+          <div id="analysis-view" class="sanctuary-view">
+            <h2>Dimensional Analysis</h2>
+            <div class="trait-analysis">
+              <!-- EI -->
+              <div class="trait-row">
+                <div class="trait-label">
+                  <span>Introversion</span>
+                  <span>Extraversion</span>
+                </div>
+                <div class="bar-bg">
+                  <div id="bar-EI" class="bar-fill"></div>
+                </div>
+                <p id="analysis-text-EI" class="analysis-text"></p>
+              </div>
+              <!-- NS -->
+              <div class="trait-row">
+                <div class="trait-label">
+                  <span>Intuition</span>
+                  <span>Sensing</span>
+                </div>
+                <div class="bar-bg">
+                  <div id="bar-NS" class="bar-fill"></div>
+                </div>
+                <p id="analysis-text-NS" class="analysis-text"></p>
+              </div>
+              <!-- FT -->
+              <div class="trait-row">
+                <div class="trait-label">
+                  <span>Feeling</span>
+                  <span>Thinking</span>
+                </div>
+                <div class="bar-bg">
+                  <div id="bar-FT" class="bar-fill"></div>
+                </div>
+                <p id="analysis-text-FT" class="analysis-text"></p>
+              </div>
+              <!-- PJ -->
+              <div class="trait-row">
+                <div class="trait-label">
+                  <span>Perceiving</span>
+                  <span>Judging</span>
+                </div>
+                <div class="bar-bg">
+                  <div id="bar-PJ" class="bar-fill"></div>
+                </div>
+                <p id="analysis-text-PJ" class="analysis-text"></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Healing View -->
+          <div id="healing-view" class="sanctuary-view">
+            <h2>Soul Healing</h2>
+            <div class="breathing-container">
+              <div class="breathing-circle"></div>
+              <p>Observe the breath, release the noise.</p>
+            </div>
+            <p id="healing-message" class="message-text"></p>
+          </div>
+
+          <!-- Joy & Growth View -->
+          <div id="joy-view" class="sanctuary-view">
+            <h2>Joy & Growth</h2>
+            <p id="joy-message" class="message-text"></p>
+            <div class="affirmation-box" style="border-left-color: var(--cyber-gold)">
+              <h3>Pathway to Bloom</h3>
+              <p id="growth-insight"></p>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem">
+          <button id="restart-btn" class="btn-primary" style="opacity: 0.7">
+            Restart Journey
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Ethereal Soul Sanctuary. Designed for the Awakening.</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
