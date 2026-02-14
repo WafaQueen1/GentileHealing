@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -31,7 +31,116 @@
           A journey of self-discovery, healing, and joy. Transcend the ordinary
           to find your inner essence.
         </p>
-        <button id="start-btn" class="btn-primary">Begin the Awakening</button>
+        <div class="hero-actions">
+          <button id="start-btn" class="btn-primary">
+            Begin the Awakening
+          </button>
+          <button id="direct-path-btn" class="btn-secondary">
+            Do you already know your personality?
+          </button>
+        </div>
+      </section>
+
+      <!-- Direct Path Section -->
+      <section id="direct-path-section" style="display: none">
+        <div class="glass-card selection-box">
+          <h2>Your Soul's Blueprint</h2>
+          <p class="subtitle">
+            Choose your known resonance to enter the sanctuary directly.
+          </p>
+
+          <div class="selection-grid">
+            <div class="selection-group">
+              <label>1. Select your Type</label>
+              <select id="direct-type-select" class="custom-select">
+                <option value="" disabled selected>Select Resonance...</option>
+                <option value="INFJ">INFJ - The Advocate</option>
+                <option value="ENFP">ENFP - The Campaigner</option>
+                <option value="INTJ">INTJ - The Architect</option>
+                <option value="INFP">INFP - The Mediator</option>
+                <option value="ENFJ">ENFJ - The Protagonist</option>
+                <option value="ENTP">ENTP - The Debater</option>
+                <option value="ENTJ">ENTJ - The Commander</option>
+                <option value="INTP">INTP - The Logician</option>
+                <option value="ISFJ">ISFJ - The Defender</option>
+                <option value="ESFJ">ESFJ - The Consul</option>
+                <option value="ISTJ">ISTJ - The Logistician</option>
+                <option value="ESTJ">ESTJ - The Executive</option>
+                <option value="ISFP">ISFP - The Adventurer</option>
+                <option value="ESFP">ESFP - The Entertainer</option>
+                <option value="ISTP">ISTP - The Virtuoso</option>
+                <option value="ESTP">ESTP - The Entrepreneur</option>
+              </select>
+            </div>
+
+            <div class="selection-group">
+              <label>2. Your Essence</label>
+              <div class="toggle-group">
+                <button class="toggle-btn active" data-gender="Female">
+                  Female
+                </button>
+                <button class="toggle-btn" data-gender="Male">Male</button>
+              </div>
+            </div>
+
+            <div class="selection-group">
+              <label>3. Temporal Setting</label>
+              <div class="toggle-group Temporal">
+                <button class="toggle-btn active" data-time="Night">
+                  Night Time
+                </button>
+                <button class="toggle-btn" data-time="Morning">
+                  Morning Light
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mood-selection-container">
+            <label>4. How does your soul feel right now?</label>
+            <div class="mood-picker direct-mood">
+              <button class="mood-btn" onclick="setDirectMood('Radiant')">
+                ✨ Radiant
+              </button>
+              <button class="mood-btn" onclick="setDirectMood('Tired')">
+                🌙 Tired
+              </button>
+              <button class="mood-btn" onclick="setDirectMood('Anxious')">
+                🌊 Anxious
+              </button>
+              <button class="mood-btn" onclick="setDirectMood('Overwhelmed')">
+                ⛈️ Overwhelmed
+              </button>
+              <button class="mood-btn" onclick="setDirectMood('Proud')">
+                🦁 Proud
+              </button>
+              <button class="mood-btn" onclick="setDirectMood('Seeking')">
+                🌿 Seeking
+              </button>
+              <button class="mood-btn" onclick="setDirectMood('Lonely')">
+                🌌 Lonely
+              </button>
+              <button class="mood-btn" onclick="setDirectMood('Inspired')">
+                🎨 Inspired
+              </button>
+              <button class="mood-btn" onclick="setDirectMood('Healing')">
+                🩹 Healing
+              </button>
+              <button class="mood-btn" onclick="setDirectMood('Dreaming')">
+                ☁️ Dreaming
+              </button>
+            </div>
+          </div>
+
+          <button
+            id="enter-sanctuary-btn"
+            class="btn-primary"
+            style="margin-top: 2rem; width: 100%"
+          >
+            Enter the Sanctuary
+          </button>
+          <button id="back-to-intro-btn" class="btn-text">Back to Home</button>
+        </div>
       </section>
 
       <!-- Questionnaire Section -->
@@ -67,20 +176,55 @@
             <div class="mood-section" style="margin-top: 2.5rem">
               <h3>How is your soul feeling in this midnight sanctuary?</h3>
               <div class="mood-picker">
-                <button class="mood-btn" onclick="selectMood('Radiant')">✨ Radiant</button>
-                <button class="mood-btn" onclick="selectMood('Tired')">🌙 Tired</button>
-                <button class="mood-btn" onclick="selectMood('Anxious')">🌊 Anxious</button>
-                <button class="mood-btn" onclick="selectMood('Overwhelmed')">⛈️ Overwhelmed</button>
-                <button class="mood-btn" onclick="selectMood('Proud')">🦁 Proud</button>
-                <button class="mood-btn" onclick="selectMood('Seeking')">🌿 Seeking</button>
-                <button class="mood-btn" onclick="selectMood('Lonely')">🌌 Lonely</button>
-                <button class="mood-btn" onclick="selectMood('Inspired')">🎨 Inspired</button>
-                <button class="mood-btn" onclick="selectMood('Healing')">🩹 Healing</button>
-                <button class="mood-btn" onclick="selectMood('Dreaming')">☁️ Dreaming</button>
+                <button class="mood-btn" onclick="selectMood('Radiant')">
+                  ✨ Radiant
+                </button>
+                <button class="mood-btn" onclick="selectMood('Tired')">
+                  🌙 Tired
+                </button>
+                <button class="mood-btn" onclick="selectMood('Anxious')">
+                  🌊 Anxious
+                </button>
+                <button class="mood-btn" onclick="selectMood('Overwhelmed')">
+                  ⛈️ Overwhelmed
+                </button>
+                <button class="mood-btn" onclick="selectMood('Proud')">
+                  🦁 Proud
+                </button>
+                <button class="mood-btn" onclick="selectMood('Seeking')">
+                  🌿 Seeking
+                </button>
+                <button class="mood-btn" onclick="selectMood('Lonely')">
+                  🌌 Lonely
+                </button>
+                <button class="mood-btn" onclick="selectMood('Inspired')">
+                  🎨 Inspired
+                </button>
+                <button class="mood-btn" onclick="selectMood('Healing')">
+                  🩹 Healing
+                </button>
+                <button class="mood-btn" onclick="selectMood('Dreaming')">
+                  ☁️ Dreaming
+                </button>
               </div>
-              <div id="mood-response" class="affirmation-box" style="display: none">
-                <p id="mood-words" style="font-size: 1.2rem; line-height: 1.6"></p>
-                <p id="psychological-insight" style="font-size: 0.95rem; margin-top: 1rem; color: var(--electric-blush); font-style: italic"></p>
+              <div
+                id="mood-response"
+                class="affirmation-box"
+                style="display: none"
+              >
+                <p
+                  id="mood-words"
+                  style="font-size: 1.2rem; line-height: 1.6"
+                ></p>
+                <p
+                  id="psychological-insight"
+                  style="
+                    font-size: 0.95rem;
+                    margin-top: 1rem;
+                    color: var(--electric-blush);
+                    font-style: italic;
+                  "
+                ></p>
               </div>
             </div>
 
@@ -154,8 +298,28 @@
           <!-- Joy & Growth View -->
           <div id="joy-view" class="sanctuary-view">
             <h2>Joy & Growth</h2>
-            <p id="joy-message" class="message-text"></p>
-            <div class="affirmation-box" style="border-left-color: var(--cyber-gold)">
+            <div class="joy-grid">
+              <div class="insight-card">
+                <h3>Your Natural Joy</h3>
+                <p
+                  id="joy-message"
+                  class="message-text"
+                  style="text-align: left"
+                ></p>
+              </div>
+              <div class="insight-card">
+                <h3>Points to Improve (Insecurities)</h3>
+                <p
+                  id="insecurity-message"
+                  class="message-text"
+                  style="text-align: left"
+                ></p>
+              </div>
+            </div>
+            <div
+              class="affirmation-box"
+              style="border-left-color: var(--cyber-gold)"
+            >
               <h3>Pathway to Bloom</h3>
               <p id="growth-insight"></p>
             </div>

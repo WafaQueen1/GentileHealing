@@ -151,96 +151,142 @@ const tailoredContent = {
     "INFJ": { 
         healing: "Navigate your Introverted Intuition (Ni) away from over-analyzing shadows. Your vision is a sanctuary, not a cage. Connect with the present sensory world.", 
         joy: "Synthesizing complex truths into a single, elegant vision. Seeing the hidden growth in others before they see it themselves.",
-        ritual: "Grounding Exercise: Touch three natural textures (wood, stone, leaf). Re-anchor your visionary mind to the physical plane."
+        ritual: "Grounding Exercise: Touch three natural textures (wood, stone, leaf). Re-anchor your visionary mind to the physical plane.",
+        insecurities: "Over-idealizing others and neglecting your own needs. Feeling like an 'alien' leads to isolation; remember your uniqueness is your bridge, not a wall."
     },
     "ENFP": { 
         healing: "Your Extraverted Intuition (Ne) brings infinite ideas, but can lead to scattered energy. Ground yourself in your values (Fi) before flying again.", 
         joy: "The electric rush of a connection that feels like destiny. Discovering a new curiosity that expands the boundaries of your world.",
-        ritual: "Breath of Air: Step outside and feel the wind. Let it take old thoughts and bring new, fresh energy into your center."
+        ritual: "Breath of Air: Step outside and feel the wind. Let it take old thoughts and bring new, fresh energy into your center.",
+        insecurities: "Fear of being boring or ordinary. Seeking constant external validation for your creativity can drain your authentic inner light."
     },
     "INTJ": { 
         healing: "Balance your Ni-Te drive for closure with moments of Te-less observation. Not every system needs optimization tonight. Allow for chaos.", 
         joy: "The profound satisfaction of a long-term plan clicking into place. A moment of intellectual mastery that needs no external validation.",
-        ritual: "Entropy Moment: Spend 10 minutes doing something with no goal. Watch water flow or clouds shift without seeking a pattern."
+        ritual: "Entropy Moment: Spend 10 minutes doing something with no goal. Watch water flow or clouds shift without seeking a pattern.",
+        insecurities: "Intellectual arrogance as a shield for emotional vulnerability. Difficulty trusting others' competence can lead to overwhelming self-reliance."
     },
     "INFP": { 
         healing: "Deep Introverted Feeling (Fi) can make the world feel harsh. Protect your inner values, but allow Ne to explore possibilities beyond the pain.", 
         joy: "Finding a piece of art or music that perfectly mirrors the complexity of your heart. A quiet moment of pure, authentic expression.",
-        ritual: "Color Alchemy: Express a feeling without words. Use colors or textures to create a visual 'mood board' of your soul index."
+        ritual: "Color Alchemy: Express a feeling without words. Use colors or textures to create a visual 'mood board' of your soul index.",
+        insecurities: "Taking everything personally and getting lost in 'what if' sadness. Seeing the world through a lens of what's missing instead of what's beautiful."
     },
     "ENFJ": { 
         healing: "Your Fe (Extraverted Feeling) can lead to 'emotional labor' burnout. Retreat into your Ni (Intuition) to find what *you* need, independent of others.", 
         joy: "The resonance of a community moving in harmony. Seeing a spark of self-belief ignite in someone you've mentored.",
-        ritual: "Inner Mirror: Sit with yourself and ask: 'What do I need that I haven't asked for?' Write it down in a golden ink."
+        ritual: "Inner Mirror: Sit with yourself and ask: 'What do I need that I haven't asked for?' Write it down in a golden ink.",
+        insecurities: "Overly sensitive to criticism and needing constant social harmony. Losing your own identity while trying to be the perfect support for everyone else."
     },
     "ENTP": { 
         healing: "Ne-Ti loops can lead to analysis paralysis or cynical detachment. Re-engage with your Fe to remember the human value of your clever ideas.", 
         joy: "A mental chess match where every move reveals a new layer of possibility. Breaking a convention to build something superior.",
-        ritual: "Perspective Pivot: Argue the opposite of a belief you hold. Find the logic in the 'other' side to expand your mental flexibility."
+        ritual: "Perspective Pivot: Argue the opposite of a belief you hold. Find the logic in the 'other' side to expand your mental flexibility.",
+        insecurities: "Using humor and debate to avoid deep emotional intimacy. Fear of committing to one path and 'missing out' on the infinite others."
     },
     "ENTJ": { 
         healing: "Te-Ni dominance makes vulnerability feel like a failure. It's actually a strategic reset. Access your Fi to ensure your ladder is on the right wall.", 
         joy: "The clear sight of an obstacle transformed into a bridge. Leading a high-stakes mission where every piece moves in perfect synchronization.",
-        ritual: "Command Reset: Delegate one small 'must-do' today. Practice the strength of letting someone else hold the weight."
+        ritual: "Command Reset: Delegate one small 'must-do' today. Practice the strength of letting someone else hold the weight.",
+        insecurities: "Impatience with 'inefficiency' in others' emotions. Deep fear of losing control or being seen as weak in high-pressure situations."
     },
     "INTP": { 
         healing: "Ti-Ne can isolate you in a world of abstractions. Use your Si (Introverted Sensing) to reconnect with the comfort and data of the physical world.", 
         joy: "Deciphering a hidden law of the universe that explains everything. The silent click of a complex puzzle finally forming a whole.",
-        ritual: "Sensory Anchor: Focus on a repetitive task like washing dishes or folding paper. Let your mind rest while your hands engage."
+        ritual: "Sensory Anchor: Focus on a repetitive task like washing dishes or folding paper. Let your mind rest while your hands engage.",
+        insecurities: "Social awkwardness leading to extreme withdrawal. Feeling like you can't satisfy the world's emotional 'requirements'."
     },
     "ISFJ": { 
         healing: "Si-Fe can lead to over-responsible burnout. Use your Ti to logically evaluate which burdens are yours to carry and which are not.", 
         joy: "The quiet beauty of a tradition kept alive. The warmth of a space where every detail is cared for and every person feels at home.",
-        ritual: "Sanctuary Boundary: Say 'no' to one request today to say 'yes' to your own rest. Mark this boundary with a sprig of lavender."
+        ritual: "Sanctuary Boundary: Say 'no' to one request today to say 'yes' to your own rest. Mark this boundary with a sprig of lavender.",
+        insecurities: "Underestimating your own impact and staying in the shadows. Fear of change disrupting the safety you've worked so hard to build."
     },
     "ESFJ": { 
         healing: "Fe-Si can make social harmony feel like a life-or-death mission. Use your Ne to realize there are many ways to be okay, even in conflict.", 
         joy: "The laughter of a group where everyone feels integrated. Being the heartbeat of a community that functions with kindness.",
-        ritual: "Social Silence: Spend 20 minutes in a public space (like a cafe) *without* interacting. Observe the harmony without needing to facilitate it."
+        ritual: "Social Silence: Spend 20 minutes in a public space (like a cafe) *without* interacting. Observe the harmony without needing to facilitate it.",
+        insecurities: "Obsessing over how others perceive you. Needing to be 'needed' to feel worthy of love and respect."
     },
     "ISTJ": { 
         healing: "Si-Te can create a rigid 'should' world. Use your Fi to reconnect with why you work so hard. Your values are the anchor, not the rules.", 
         joy: "The profound satisfaction of a system that works exactly as intended. Knowing that you are the reliable pillar others can lean on.",
-        ritual: "Chaos Comfort: Intentionally leave one non-essential task unfinished. Sit with the discomfort and realize the world is still standing."
+        ritual: "Chaos Comfort: Intentionally leave one non-essential task unfinished. Sit with the discomfort and realize the world is still standing.",
+        insecurities: "Being overly critical of yourself and others when plans fail. Struggle to express affection in ways that feel 'natural' to others."
     },
     "ESTJ": { 
         healing: "Te-Si dominance can over-structure the soul. Use your Ne to see that the best results often come from the most unexpected places.", 
         joy: "Directing energy into a tangible, high-impact result. The respect of a team that admires your clarity and decisive strength.",
-        ritual: "Unstructured Hour: Set a timer for 60 minutes with *no* agenda. Follow your curiosity wherever it leads without checking the clock."
+        ritual: "Unstructured Hour: Set a timer for 60 minutes with *no* agenda. Follow your curiosity wherever it leads without checking the clock.",
+        insecurities: "Steamrolling over others' feelings in the pursuit of results. Identifying so strongly with your 'work' that you lose your inner self."
     },
     "ISFP": { 
         healing: "Fi-Se can make you vulnerable to sensory and emotional overwhelm. Use your Ni to find the long-term meaning in the current storm.", 
         joy: "A moment of pure sensory flow where you and your environment are one. Creating art that needs no explanation or audience.",
-        ritual: "Tactile Grounding: Work with clay, dough, or earth. Feel the direct influence of your soul on the physical world."
+        ritual: "Tactile Grounding: Work with clay, dough, or earth. Feel the direct influence of your soul on the physical world.",
+        insecurities: "Fear of being trapped in a life that feels 'fake'. Withdrawing when you feel misunderstood, often cutting off help you need."
     },
     "ESFP": { 
         healing: "Se-Fi can lead to a 'performance' fatigue. Use your Te to organize your energy so you have something left for your private self.", 
         joy: "The raw adrenaline of a moment where the world is watching and you are performing at your peak. Making the world feel like a stage.",
-        ritual: "Quiet Spotlight: Sit in the sun or under a bright light alone. Experience the 'stage' energy without needing to perform for anyone."
+        ritual: "Quiet Spotlight: Sit in the sun or under a bright light alone. Experience the 'stage' energy without needing to perform for anyone.",
+        insecurities: "Seeking shallow thrills to avoid deep emotional processing. Sensitivity to being 'left out' of the social excitement."
     },
     "ISTP": { 
         healing: "Ti-Se can lead to a detached, tactical existence. Access your Ni to see where your skills fit into the larger, more meaningful picture.", 
         joy: "The razor-sharp focus of an engine repaired or a trick mastered. Moving through a complex physical environment with innate grace.",
-        ritual: "Solitary Craft: Spend time fixing or creating something purely for the sake of the mechanism. No 'users' allowed."
+        ritual: "Solitary Craft: Spend time fixing or creating something purely for the sake of the mechanism. No 'users' allowed.",
+        insecurities: "Appearing 'cold' to loved ones when you are actually just solving a problem. Risking safety or health just to feel the 'edge' of a moment."
     },
     "ESTP": { 
         healing: "Se-Ti can lead to impulsive burnout. Use your Fe to connect with the long-term impact of your actions on the people you value.", 
         joy: "The thrill of a risk taken and won in the blink of an eye. Command over the physical moment that leaves others in awe.",
-        ritual: "Pulse Control: During a moment of high energy, stop and count your pulse. Wait for it to slow by 5 beats before moving again."
+        ritual: "Pulse Control: During a moment of high energy, stop and count your pulse. Wait for it to slow by 5 beats before moving again.",
+        insecurities: "Boredom that turns into destructive behavior. Using your charm to manipulate situations instead of being authentic."
     }
 };
 
 const moodPrescriptions = {
-    "Radiant": { words: "Since you are already glowing, use this light to shine into the small corners of your world. Your joy is contagious; let it overflow naturally.", psychological: "Your Extraverted functions are in high resonance. Optimize this peak for creative output." },
-    "Tired": { words: "Rest is a productive act. Your worth is not tied to your output. Sink into the softness of the current moment. Your soul is asking for a pause.", psychological: "Recovery phase detected. Prioritize sensory subtraction (low light, silence) to recharge cognitive reserves." },
-    "Anxious": { words: "You are deeper than any waves on the surface. Return to the constant calm at the center of your heart. The future is unfolding in gentleness.", psychological: "Cortisol spikes require grounding. Focus on 'Box Breathing': inhale 4, hold 4, exhale 4, hold 4." },
-    "Overwhelmed": { words: "Take one small breath. Then one small step. You don't have to carry the mountain; you only have to walk the path.", psychological: "Cognitive overload from too many open loops. Close one small task to regain a sense of executive control." },
-    "Proud": { words: "Celebrate the quiet victories as much as the loud ones. You have navigated so much with such grace. Own your brilliant light.", psychological: "Positive reinforcement integrates achievements into long-term self-worth. Savor the win." },
-    "Seeking": { words: "The path is appearing with every step you take. Trust the timing of your soul's unfolding. Every question is a seed.", psychological: "Your Intuition is scanning for new patterns. Stay open but anchor yourself in the 'Minimum Viable Next Step'." },
-    "Lonely": { words: "You are never truly separate from the light that connects us all. Reach out to a memory, a book, or a friend. Your heart is seen.", psychological: "Social-needs alarm. Even a micro-connection (a text, a nod) can reset the Oxytocin deficit." },
-    "Inspired": { words: "Let the vision flow through you without editing. This is your soul's unique song. Create for the sake of the joy it brings.", psychological: "Flow State opportunity. Remove distractions and let your dominant function lead the way without the 'Inner Critic'." },
-    "Healing": { words: "Every day you are becoming a more whole version of yourself. Be gentle with the mending parts. Softness is its own kind of power.", psychological: "Neuro-integration in progress. Be patient with the 'clumsy' feeling of new emotional habits." },
-    "Dreaming": { words: "Your visions are the blueprints for a beautiful world. Allow yourself to wander in the possible. The stars are listening.", psychological: "Alpha-wave activity is high. This is the optimal time for unstructured problem solving and poetic thinking." }
+    "Radiant": { 
+        words: "Since you are already glowing, use this light to shine into the small corners of your world. Your joy is contagious; let it overflow naturally.", 
+        psychological: "Dopamine-rich state. Optimal for creative tasks requiring high divergent thinking. Neuroplasticity is high in positive states." 
+    },
+    "Tired": { 
+        words: "Rest is a productive act. Your worth is not tied to your output. Sink into the softness of the current moment. Your soul is asking for a pause.", 
+        psychological: "Glymphatic system activation needed. Prioritize sleep or deep rest to clear metabolic waste from neural tissues." 
+    },
+    "Anxious": { 
+        words: "You are deeper than any waves on the surface. Return to the constant calm at the center of your heart. The future is unfolding in gentleness.", 
+        psychological: "Box Breathing Technique: 4s Inhale, 4s Hold, 4s Exhale, 4s Hold. This resets the Autonomic Nervous System through Vagus nerve stimulation." 
+    },
+    "Overwhelmed": { 
+        words: "Take one small breath. Then one small step. You don't have to carry the mountain; you only have to walk the path.", 
+        psychological: "Prefrontal Cortex fatigue. Reduce cognitive load by naming (labeling) your emotions. 'What you name, you can tame'." 
+    },
+    "Proud": { 
+        words: "Celebrate the quiet victories as much as the loud ones. You have navigated so much with such grace. Own your brilliant light.", 
+        psychological: "Serotonin stabilization. Reflecting on achievements reinforces your sense of agency and stabilizes self-esteem circuitry." 
+    },
+    "Seeking": { 
+        words: "The path is appearing with every step you take. Trust the timing of your soul's unfolding. Every question is a seed.", 
+        psychological: "Curiosity-driven state. Engaging the 'Seeker' network in the brain increases learning capacity and resilience to stress." 
+    },
+    "Lonely": { 
+        words: "You are never truly separate from the light that connects us all. Reach out to a memory, a book, or a friend. Your heart is seen.", 
+        psychological: "Oxytocin deficit detected. Engage in 'Parasocial Connection' (reading, watching familiar art) or micro-interactions to reset social pain centers." 
+    },
+    "Inspired": { 
+        words: "Let the vision flow through you without editing. This is your soul's unique song. Create for the sake of the joy it brings.", 
+        psychological: "Flow State Resonance: Your Prefrontal Cortex is quieting, allowing for pure, uninhibited creative output. Seize this burst." 
+    },
+    "Healing": { 
+        words: "Every day you are becoming a more whole version of yourself. Be gentle with the mending parts. Softness is its own kind of power.", 
+        psychological: "Neuro-integration: You are rewriting old pavlovian responses. Patience is required as new neural pathways stabilize." 
+    },
+    "Dreaming": { 
+        words: "Your visions are the blueprints for a beautiful world. Allow yourself to wander in the possible. The stars are listening.", 
+        psychological: "Theta-wave dominance. Optimal for deep problem solving and connecting distant concepts. Allow your mind to wander without a map." 
+    }
 };
 
 const personalityDescriptions = {
@@ -271,7 +317,11 @@ let userType = "";
 const introSection = document.getElementById('intro-section');
 const quizSection = document.getElementById('quiz-section');
 const resultsSection = document.getElementById('results-section');
+const directPathSection = document.getElementById('direct-path-section');
 const startBtn = document.getElementById('start-btn');
+const directPathBtn = document.getElementById('direct-path-btn');
+const backToIntroBtn = document.getElementById('back-to-intro-btn');
+const enterSanctuaryBtn = document.getElementById('enter-sanctuary-btn');
 const restartBtn = document.getElementById('restart-btn');
 const questionContent = document.getElementById('question-content');
 const progressBar = document.getElementById('progress-bar');
@@ -280,9 +330,69 @@ const personalityDescDisplay = document.getElementById('personality-description'
 const affirmationDisplay = document.getElementById('daily-affirmation');
 const healingMessageDisplay = document.getElementById('healing-message');
 const joyMessageDisplay = document.getElementById('joy-message');
+const insecurityMessageDisplay = document.getElementById('insecurity-message');
 const moodResponse = document.getElementById('mood-response');
 const moodWords = document.getElementById('mood-words');
 const psychInsight = document.getElementById('psychological-insight');
+
+let selectedGender = "Female";
+let selectedTime = "Night";
+let selectedDirectMood = "";
+
+// Lifecycle
+if (startBtn) startBtn.addEventListener('click', startQuiz);
+if (directPathBtn) directPathBtn.addEventListener('click', showDirectPath);
+if (backToIntroBtn) backToIntroBtn.addEventListener('click', showIntro);
+if (enterSanctuaryBtn) enterSanctuaryBtn.addEventListener('click', enterSanctuaryDirect);
+if (restartBtn) restartBtn.addEventListener('click', () => location.reload());
+
+// Toggle button logic
+document.querySelectorAll('.toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const parent = btn.parentElement;
+        parent.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        if (btn.hasAttribute('data-gender')) selectedGender = btn.getAttribute('data-gender');
+        if (btn.hasAttribute('data-time')) selectedTime = btn.getAttribute('data-time');
+    });
+});
+
+function showIntro() {
+    introSection.style.display = 'block';
+    directPathSection.style.display = 'none';
+    quizSection.style.display = 'none';
+}
+
+function showDirectPath() {
+    introSection.style.display = 'none';
+    directPathSection.style.display = 'block';
+    createParticles();
+}
+
+window.setDirectMood = (mood) => {
+    selectedDirectMood = mood;
+    document.querySelectorAll('.direct-mood .mood-btn').forEach(b => b.classList.remove('active'));
+    if (event) event.target.classList.add('active');
+};
+
+function enterSanctuaryDirect() {
+    const typeSelect = document.getElementById('direct-type-select');
+    userType = typeSelect.value;
+    
+    if (!userType) {
+        typeSelect.style.borderColor = 'var(--electric-blush)';
+        return;
+    }
+
+    if (!selectedDirectMood) {
+        alert("Please let us know how your soul feels.");
+        return;
+    }
+
+    directPathSection.style.display = 'none';
+    showResults(true); // Flag for direct path
+}
 
 // Midnight Santuary Interactivity
 document.addEventListener('mousemove', (e) => {
@@ -321,9 +431,6 @@ function createParticles() {
     }
 }
 
-// Lifecycle
-if (startBtn) startBtn.addEventListener('click', startQuiz);
-if (restartBtn) restartBtn.addEventListener('click', () => location.reload());
 window.onload = createParticles;
 
 // Tab Switching Logic
@@ -393,19 +500,36 @@ const growthInsights = {
     "P": "Growth comes in the clarity of completion. Finish one small task that has been lingering today."
 };
 
-function showResults() {
-    userType = calculatePersonality();
-    const percentages = calculatePercentages();
+function showResults(isDirect = false) {
+    if (!isDirect) {
+        userType = calculatePersonality();
+        const percentages = calculatePercentages();
+        updateCelestialChart(percentages);
+    } else {
+        // For direct path, we set default percentages or hide the chart
+        document.getElementById('analysis-view').style.display = 'none';
+        document.querySelector('[data-view="analysis-view"]').style.display = 'none';
+        
+        // Trigger mood prescription if direct mood was selected
+        if (selectedDirectMood) selectMood(selectedDirectMood);
+    }
     
-    if (progressBar) progressBar.style.width = "100%";
     if (quizSection) quizSection.style.display = 'none';
     if (resultsSection) resultsSection.style.display = 'block';
 
-    // Essence View
+    // Personality Info
     if (personalityTypeDisplay) personalityTypeDisplay.innerText = userType;
     if (personalityDescDisplay) personalityDescDisplay.innerHTML = personalityDescriptions[userType] || "A unique and beautiful soul.";
-    const time = getTimeOfDay();
-    if (affirmationDisplay) affirmationDisplay.innerText = affirmations[time][Math.floor(Math.random() * affirmations[time].length)];
+    
+    // Personalized Greeting
+    const time = isDirect ? selectedTime : getTimeOfDay();
+    const greetingPrefix = selectedGender === "Male" ? "Dear Traveler," : "Dear Soul,";
+    const timeGreeting = time === "Morning" ? "May your day be filled with clarity." : "May your night be filled with peace.";
+    
+    if (affirmationDisplay) {
+        const randomAff = affirmations[time][Math.floor(Math.random() * affirmations[time].length)];
+        affirmationDisplay.innerHTML = `<span style="display:block; font-size: 0.9rem; margin-bottom: 0.5rem; opacity: 0.7;">${greetingPrefix} ${timeGreeting}</span>${randomAff}`;
+    }
 
     // Sanctuary Guidance
     const guidance = document.createElement('p');
@@ -415,15 +539,14 @@ function showResults() {
     guidance.innerHTML = '✧ <i>Step into the sanctuary tabs above to explore your celestial analysis.</i> ✧';
     if (personalityDescDisplay) personalityDescDisplay.appendChild(guidance);
 
-    // Analysis View (Celestial Chart)
-    updateCelestialChart(percentages);
-
-    // Healing View (Tailored)
-    const tailored = tailoredContent[userType] || { healing: "Release the noise.", joy: "Find your center.", ritual: "Breathe deep." };
+    // Healing & Joy View (Tailored)
+    const tailored = tailoredContent[userType] || { healing: "Release the noise.", joy: "Find your center.", ritual: "Breathe deep.", insecurities: "Observe without judgment." };
     if (healingMessageDisplay) healingMessageDisplay.innerHTML = `<strong>Midnight Healing:</strong> ${tailored.healing}<br><br><strong>Midnight Ritual:</strong> ${tailored.ritual}`;
 
-    // Joy View (Tailored)
+    // Joy & Growth View (Enhanced)
     if (joyMessageDisplay) joyMessageDisplay.innerText = tailored.joy;
+    if (insecurityMessageDisplay) insecurityMessageDisplay.innerText = tailored.insecurities;
+    
     const primaryTrait = userType[0];
     const insightEl = document.getElementById('growth-insight');
     if (insightEl) insightEl.innerText = growthInsights[primaryTrait];
